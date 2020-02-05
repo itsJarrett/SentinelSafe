@@ -1,0 +1,105 @@
+{% extends "pages/abstract/default.html.twig" %}
+
+{% set page_active = "about" %}
+
+{# Overrides blocks in head of base template #}
+{% block page_title %}{{translate("ABOUT")}}{% endblock %}
+
+{% block page_description %}All about Sentinel Safe.{% endblock %}
+
+{% block body_matter %}
+
+    <!-- Intro Content -->
+    <div class="row">
+        <div class="col-md-6">
+            <img class="img-responsive" src="https://efficientgov.com/wp-content/uploads/2014/05/Dispatch.jpg" alt="">
+        </div>
+        <div class="col-md-6">
+            <h2>About Sentinel Safe</h2>
+            <p><b>We are in the business of keeping you informed.</b></p>
+            <p>Sentinel Safe is designed to keep you informed EVERY time Emergency Medical / Fire Services are called to your house and neighborhood.</p>
+            <p>Simply sign up, and we will be in touch shortly.</p>
+        </div>
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <h2>Recent Incidents</h2>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Incident #</th>
+                <th scope="col">Agency</th>
+                <th scope="col">Address</th>
+                <th scope="col">Incident Type</th>
+                <th scope="col">Dispatch Time</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for incident in incidents %}
+                <tr>
+                    <td>{{ incident.incidentNumber }}</td>
+                    <td>{{ incident.agency }}</td>
+                    <td>{{ incident.address }}</td>
+                    <td>{{ incident.incidentType }}</td>
+                    <td>{{ incident.dispatchTime }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <!-- Team Members -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="page-header">Our Team</h2>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="thumbnail">
+                <img class="img-responsive" src="https://i.imgur.com/I16mfqW.jpg" alt="">
+                <div class="caption">
+                    <h3>Jarrett Boice<br>
+                        <small>Project Manager / Software Developer / Backend Engineer</small>
+                    </h3>
+                    <ul class="list-inline">
+                        <li><a href="https://github.com/itsJarrett"><i class="fa fa-2x fa-github-square"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/itsJarrett/"><i class="fa fa-2x fa-linkedin-square"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="thumbnail">
+                <img class="img-responsive" src="https://i.imgur.com/VfSWhW8.jpg" alt="">
+                <div class="caption">
+                    <h3>Sebastian Vasquez<br>
+                        <small>Software Developer / Frontend Engineer</small>
+                    </h3>
+                    <ul class="list-inline">
+                        <li><a href="https://github.com/cbass5"><i class="fa fa-2x fa-github-square"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/sebastian-vasquez-b34087185/"><i class="fa fa-2x fa-linkedin-square"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="thumbnail">
+                <img class="img-responsive" src="https://i.imgur.com/dvGkCLQ.jpg" alt="">
+                <div class="caption">
+                    <h3>Frank Curry<br>
+                        <small>Software Developer / Frontend Engineer</small>
+                    </h3>
+                    <ul class="list-inline">
+                        <li><a href="https://github.com/QualityPyrite"><i class="fa fa-2x fa-github-square"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/sebastian-vasquez-b34087185/"><i class="fa fa-2x fa-linkedin-square"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+{% endblock %}

@@ -1,0 +1,27 @@
+.idea/
+
+# CakePHP 3
+
+/web/vendor/*
+/web/config/app.php
+
+/web/tmp/cache/models/*
+!/web/tmp/cache/models/empty
+/web/tmp/cache/persistent/*
+!/web/tmp/cache/persistent/empty
+/web/tmp/cache/views/*
+!/web/tmp/cache/views/empty
+/web/tmp/sessions/*
+!/web/tmp/sessions/empty
+/web/tmp/tests/*
+!/web/tmp/tests/empty
+
+/web/logs/*
+!/web/logs/empty
+
+# CakePHP 2
+
+/web/app/tmp/*
+/web/app/Config/core.php
+/web/app/Config/database.php
+/web/vendors/*
