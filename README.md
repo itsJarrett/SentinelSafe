@@ -2,8 +2,8 @@
 
 ## Authors / Contributors
 
-Jarrett B. - [https://github.com/itsJarrett](https://github.com/itsJarrett)
-Sebastian V. - [https://github.com/cbass5](https://github.com/cbass5)
+* Jarrett B. - [https://github.com/itsJarrett](https://github.com/itsJarrett)
+* Sebastian V. - [https://github.com/cbass5](https://github.com/cbass5)
 
 ## Inspiration
 
