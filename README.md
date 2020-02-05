@@ -1,5 +1,10 @@
 # Sentinel Safe
 
+## Authors / Contributors
+
+Jarrett B. - [https://github.com/itsJarrett](https://github.com/itsJarrett)
+Sebastian V. - [https://github.com/cbass5](https://github.com/cbass5)
+
 ## Inspiration
 
 When Emergency Medical / Fire Services are dispatched to your house, you are often the LAST person to find out. Whether a fire is burning, or a loved one has been injured, there is a lot of time between getting notified about such events.
